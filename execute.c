@@ -12,7 +12,7 @@ int execute(char *line, stack_t **stack, unsigned int line_number,
 				FILE *bytecode_file)
 {
 	instruction_t opcodes[] = {
-		{"push", push}, {"pall", pall},
+		{"push", push}, {"pall", pall},{"pint", pint},
 		{"stack", stack_c}, {"queue", queue_c},
 		{NULL, NULL},
 	};
