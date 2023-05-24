@@ -13,7 +13,7 @@ int execute(char *line, stack_t **stack, unsigned int line_number,
 {
 	instruction_t opcodes[] = {
 		{"push", push}, {"pall", pall},{"pint", pint},
-		{"pop", pop},
+		{"pop", pop},{"swap", swap},
 		{"stack", stack_c}, {"queue", queue_c},
 		{NULL, NULL},
 	};
