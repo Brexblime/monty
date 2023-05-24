@@ -54,6 +54,8 @@ int execute(char *line, stack_t **stack, unsigned int line_number,
 void push(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
+void pop(stack_t **stack, unsigned int line_number);
+
 void queue_c(stack_t **stack, unsigned int line_number);
 void stack_c(stack_t **stack, unsigned int line_number);
 ssize_t _getline(char **lineptr, size_t *n, FILE *stream);
