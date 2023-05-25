@@ -14,7 +14,8 @@ int execute(char *line, stack_t **stack, unsigned int line_number,
 	instruction_t opcodes[] = {
 		{"push", push}, {"pall", pall},{"pint", pint},
 		{"pop", pop},{"swap", swap},{"add", add},
-		{"nop", nop},{"sub", sub},{"divide", divide},
+		{"nop", nop},{"sub", sub},{"div", div},
+		{"mul", mul},
 		{"stack", stack_c}, {"queue", queue_c},
 		{NULL, NULL},
 	};

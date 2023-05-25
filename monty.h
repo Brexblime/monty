@@ -6,8 +6,6 @@
 #include <sys/types.h>
 #include <stdbool.h>
 
-#define div div_opcode
-
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -62,7 +60,8 @@ void swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
 void sub(stack_t **stack, unsigned int line_number);
-void divide(stack_t **stack, unsigned int line_number);
+void div(stack_t **stack, unsigned int line_number);
+void mul(stack_t **stack, unsigned int line_number);
 
 void queue_c(stack_t **stack, unsigned int line_number);
 void stack_c(stack_t **stack, unsigned int line_number);
