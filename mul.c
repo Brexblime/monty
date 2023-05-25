@@ -7,14 +7,16 @@
 */
 void mul(stack_t **stack, unsigned int line_number)
 {
+	int a, b;
+
 	if (*stack == NULL || (*stack)->next == NULL)
 	{
 		fprintf(stderr, "L%u: can't mul, stack too short\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 
-	int a = (*stack)->n;
-	int b = (*stack)->next->n;
+	a = (*stack)->n;
+	b = (*stack)->next->n;
 
 	(*stack)->next->n = a * b;
 
