@@ -62,7 +62,7 @@ void nop(stack_t **stack, unsigned int line_number);
 void sub(stack_t **stack, unsigned int line_number);
 
 void mul(stack_t **stack, unsigned int line_number);
-
+void mod(stack_t **stack, unsigned int line_number);
 void queue_c(stack_t **stack, unsigned int line_number);
 void stack_c(stack_t **stack, unsigned int line_number);
 ssize_t _getline(char **lineptr, size_t *n, FILE *stream);

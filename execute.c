@@ -15,6 +15,7 @@ int execute(char *line, stack_t **stack, unsigned int line_number,
 		{"push", push}, {"pall", pall},{"pint", pint},
 		{"pop", pop},{"swap", swap},{"add", add},
 		{"nop", nop},{"sub", sub},{"mul", mul},
+		{"mod", mod},
 		{"stack", stack_c}, {"queue", queue_c},
 		{NULL, NULL},
 	};
